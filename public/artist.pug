@@ -1,0 +1,8 @@
+doctype html
+html(lang="en")
+    head
+        title=Artists
+    body
+        each artist in artists
+            h1 #{artist.name}
+            img(src=artist && artist['profileImage'] && artist['profileImage']['url'] ? artist['profileImage']['url'] : '')
